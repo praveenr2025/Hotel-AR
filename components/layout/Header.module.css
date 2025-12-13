@@ -1,0 +1,24 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.topbarTitle h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.topbarTitle p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.topbarActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

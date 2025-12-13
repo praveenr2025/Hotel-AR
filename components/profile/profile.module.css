@@ -1,0 +1,279 @@
+/* ==========================================================
+   PROFILE MODULE — Unified Light Theme (HotelHub Console)
+   ========================================================== */
+
+/* ----------------------------------------
+   PAGE WRAPPER (Consistent with Bookings/Invoices)
+   ---------------------------------------- */
+.pageWrapper {
+  padding-left: 36px;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* ----------------------------------------
+   TOPBAR
+   ---------------------------------------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topbarTitle h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+.topbarTitle p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.topbarActions {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.15s;
+}
+
+.btn:hover {
+  background: #f3f4f6;
+}
+
+.btnPrimary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+.btnPrimary:hover {
+  background: #1d4ed8;
+}
+
+/* ----------------------------------------
+   CARDS (KPI + Workspace Cards)
+   ---------------------------------------- */
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.cardSubtitle {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.metricPill {
+  padding: 6px 12px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+/* ----------------------------------------
+   GRID SYSTEM
+   ---------------------------------------- */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.responsiveGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+/* ----------------------------------------
+   INPUTS / SELECTS / TEXTAREA
+   ---------------------------------------- */
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  font-size: 14px;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Label */
+.label {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* ----------------------------------------
+   TABS (Light theme — Matches Bookings/Invoices)
+   ---------------------------------------- */
+.tabBar {
+  background: #f1f5ff;
+  padding: 6px;
+  border-radius: 12px;
+  display: inline-flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #dbe7ff;
+}
+
+.tab {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.18s ease;
+}
+
+.tab:hover {
+  background: white;
+  border-color: rgba(0,0,0,0.06);
+}
+
+.active {
+  background: white;
+  border-color: #4169e1;
+  color: #1e40af;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+/* ----------------------------------------
+   TABLE STYLING
+   ---------------------------------------- */
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  background: #f8fafc;
+  padding: 12px;
+  color: #475569;
+  font-size: 13px;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 500;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badgeSuccess {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badgeWarning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* ----------------------------------------
+   LINKS
+   ---------------------------------------- */
+.link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------
+   INLINE MUTED TEXT
+   ---------------------------------------- */
+.muted {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ----------------------------------------
+   ACTION ROWS
+   ---------------------------------------- */
+.actionsRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}

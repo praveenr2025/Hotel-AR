@@ -1,0 +1,34 @@
+.tabList {
+  display: inline-flex;      
+  gap: 24px;
+  padding: 10px 16px;
+  background: #f1f5ff;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #334155;                   
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+.active {
+  background: #ffffff;
+  color: #2563eb;                    
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.tabPanels {
+  margin-top: 18px;
+}

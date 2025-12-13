@@ -1,0 +1,522 @@
+/* =========================================
+   INVOICES — GLOBAL PAGE LAYOUT
+========================================= */
+.page {
+  width: 100%;
+  padding: 24px;
+  background: #f8fafc;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto;
+  color: #0f172a;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.topbarTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.topbarTitle h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.topbarSubtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* Topbar actions */
+.actionsRight {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+/* =========================================
+   KPI CARDS (SAME AS BOOKINGS/CONTRACTS)
+========================================= */
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.kpiCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(17, 24, 39, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.cardSubtitle {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.metricPill {
+  padding: 6px 12px;
+  background: #eef2ff;
+  color: #4338ca;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   TABS — RECTANGULAR (SAME AS BOOKINGS)
+========================================= */
+/* === INVOICES TAB BAR — Full HotelHub Pastel Style === */
+
+.tabBar {
+  background: #f1f5ff;
+  padding: 6px;
+  border-radius: 12px;
+  display: inline-flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #dbe7ff;
+}
+
+/* Default tab */
+.tab {
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 14px;
+  color: #475569;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+/* Hover effect */
+.tab:hover {
+  background: #ffffff;
+  border-color: rgba(0,0,0,0.06);
+}
+
+/* ACTIVE TAB – EXACT MATCH WITH BOOKINGS */
+.tab.active {
+  background: #ffffff;
+  color: #1e40af;
+  font-weight: 600;
+  border-color: #4169e1;          /* Royal blue border */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+
+
+/* =========================================
+   FILTER BAR
+========================================= */
+.filtersBar {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.input,
+.select {
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  font-size: 13px;
+  width: 100%;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #93c5fd;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(147,197,253,0.25);
+}
+
+
+/* =========================================
+   TABLES (UNIFIED)
+========================================= */
+.tableWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th {
+  background: #f8fafc;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.table tr:hover {
+  background: #f9fafb;
+}
+
+
+/* Badges */
+.badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badgeSuccess {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badgeWarning {
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.badgeDanger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badgeInfo {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+
+/* =========================================
+   FORM SECTION
+========================================= */
+.sectionLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGrid,
+.gridAuto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  font-size: 13px;
+  resize: vertical;
+}
+
+.formActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.statusText {
+  font-size: 12px;
+  color: #64748b;
+}
+
+
+/* =========================================
+   SUMMARY LAYOUT (Mirror Contracts style)
+========================================= */
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.summaryBlock {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   RESERVATION PICKER
+========================================= */
+.pickerCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.pickerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pickerHint {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+
+/* =========================================
+   LINE ITEMS TABLE
+========================================= */
+.lineItemsTable input {
+  border-radius: 8px;
+  padding: 6px;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 900px) {
+  .kpiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .kpiGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabBar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+/* === Invoices.module.css — unified HotelHub pastel theme === */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+  background: #f8fafc;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+/* shared card */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.cardHeader, .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cardTitle, .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.cardSubtitle, .card-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* KPI grid */
+
+
+/* Filters bar */
+.filtersBar {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+
+/* Inputs */
+.input,
+.select,
+.dateInput {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  font-size: 13px;
+  width: 100%;
+}
+
+
+.textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  font-size: 13px;
+  min-height: 70px;
+}
+
+/* table */
+.tableWrap, .table-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead th {
+  background: #fbfdfe;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* badges */
+.badge {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.badgeSuccess { background:#dcfce7; color:#166534; }
+.badgeWarning { background:#fffbeb; color:#92400e; }
+.badgeDanger  { background:#fff1f2; color:#991b1b; }
+
+/* grid helpers */
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.gridAuto {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Forms layout */
+.formContainer { margin-top: 12px; }
+.sectionLabel { font-size: 12px; font-weight: 600; color:#64748b; margin-bottom:8px; }
+.formField { display:flex; flex-direction:column; gap:6px; }
+.fileList { margin-top:6px; font-size:12px; color:#6b7280; }
+
+/* form actions */
+.formActions {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-top:12px;
+}
+.statusText { font-size:12px; color:#6b7280; margin-left:6px; }
+
+/* summary */
+.summaryGrid {
+  display:grid;
+  grid-template-columns: 7fr 5fr;
+  gap:16px;
+}
+
+/* small helpers */
+.linkText { color:#2563eb; text-decoration:underline; cursor:pointer; }
+
+/* responsive */
+@media (max-width: 1100px) {
+  .kpiGrid { grid-template-columns: repeat(2, 1fr); }
+  .summaryGrid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .kpiGrid { grid-template-columns: 1fr; }
+  .gridAuto { grid-template-columns: 1fr; }
+}

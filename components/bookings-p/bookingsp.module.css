@@ -1,0 +1,530 @@
+/* ===== LAYOUT ===== */
+
+.layoutMain {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 5fr);
+  gap: 16px;
+}
+
+/* ===== SEARCH CARD ===== */
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cardSubtitle {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.filtersBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ===== RESULTS + MAP ===== */
+
+.resultsLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.hotelList {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 360px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #e5f0f6;
+}
+
+.badgeInfo {
+  background: #eef2ff;
+  color: #1e40af;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1100px) {
+  .layoutMain {
+    grid-template-columns: 1fr;
+  }
+
+  .resultsLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .mapContainer {
+    height: 300px;
+  }
+}
+/* ===============================
+   HOTEL RESULT CARDS
+================================ */
+
+.hotelCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hotelCard:hover {
+  border-color: #2563eb;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08);
+}
+
+.hotelCardActive {
+  background: #fff7ed;
+  border-color: #fb923c;
+}
+
+.hotelHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.hotelName {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hotelLocation {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.hotelPrice {
+  font-size: 13px;
+  font-weight: 600;
+  color: #166534;
+  white-space: nowrap;
+}
+
+.hotelMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.rating {
+  background: #fffbeb;
+  color: #92400e;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.hotelActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.link {
+  font-size: 11px;
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bookBtn {
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.bookBtn:hover {
+  background: #f3f4f6;
+}
+/* ===============================
+   SEARCH CARD (PARTNER BOOKINGS)
+================================ */
+
+.searchCard {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+}
+
+.searchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.searchTitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.searchSubtitle {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.clearBtn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.clearBtn:hover {
+  background: #f3f4f6;
+}
+
+/* ---------- FORM GRID ---------- */
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.input,
+.select {
+  width: 100%;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid #dbe2f1;
+  padding: 0 14px;
+  font-size: 12px;
+}
+
+.select {
+  background: #ffffff;
+}
+
+/* ---------- STAY DETAILS ---------- */
+
+.stayRow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* ---------- FILTER PILLS ---------- */
+
+.filtersRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.filterPill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  background: #eff6ff;
+  color: #2563eb;
+  white-space: nowrap;
+}
+
+/* ---------- FOOTER ---------- */
+
+.searchFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.searchNote {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* 🔵 BLUE CTA BUTTON */
+
+.searchBtn {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  background: #1d4ed8;
+}
+.actionsRight {
+  display: flex;
+  gap: 10px;
+}
+
+/* ---------- Tabs ---------- */
+/* ================================
+   TABS (Bookings page)
+================================ */
+
+.tabList {
+  display: inline-flex;
+  gap: 24px;
+  padding: 10px 16px;
+  background: #f1f5ff;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #334155;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.activeTab {
+  background: #ffffff;
+  color: #2563eb;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   TAB PANELS
+================================ */
+
+.tabPanels {
+  margin-top: 18px;
+}
+
+
+/* ---------- Layouts ---------- */
+.layoutMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.historyLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* ---------- Card ---------- */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+}
+
+.historyCard {
+  padding: 0;
+}
+
+.cardHeader {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cardSubtitle {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* ---------- Table ---------- */
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th {
+  text-align: left;
+  padding: 10px 12px;
+  color: #6b7280;
+  font-weight: 500;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.emptyState {
+  text-align: center;
+  color: #9ca3af;
+  padding: 30px 12px;
+}
+/* Table rows */
+.tableRow {
+  transition: background 0.15s ease;
+  cursor: pointer;
+}
+
+.tableRow:hover {
+  background: #f8fafc;
+}
+
+/* Status pills */
+.statusPill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.confirmed {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+/* Amount */
+.amount {
+  font-weight: 600;
+  white-space: nowrap;
+}
+/* ================================
+   TRAVEL INSIGHTS
+================================ */
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.metricCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+.metricLabel {
+  font-size: 11px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.metricValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.metricHint {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.recentSection {
+  margin-top: 14px;
+}
+
+.activityList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #475569;
+}
+
+.activityList li + li {
+  margin-top: 4px;
+}
+
+/* ================================
+   HISTORY LAYOUT (2 columns)
+================================ */
+
+.historyLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
+  gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .historyLayout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .metricsGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

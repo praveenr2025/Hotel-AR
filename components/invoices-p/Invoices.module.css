@@ -1,0 +1,133 @@
+.appShell {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.metricsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metric {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.metricLabel {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.metricValue {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.twoPane {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 16px;
+}
+
+.leftPane,
+.rightPane {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+
+.table,
+.tableSmall {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activeRow {
+  background: #f1f5f9;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.detailLabel {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.muted {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.empty {
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+  padding: 40px 0;
+}
+/* ===== TAB CONTAINER ===== */
+.tabWrap {
+  margin-bottom: 14px;
+}
+
+.tabGroup {
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  background: #f3f6fc;
+  border-radius: 999px;
+}
+
+/* ===== TAB ITEM ===== */
+.tabItem {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover (subtle) */
+.tabItem:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Active tab */
+.active {
+  background: #ffffff;
+  color: #1d4ed8;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 10px rgba(0, 0, 0, 0.06);
+}

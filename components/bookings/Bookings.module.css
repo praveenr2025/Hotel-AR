@@ -1,0 +1,316 @@
+/* =========================================
+   BOOKING WORKSPACE — GLOBAL LAYOUT
+========================================= */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Shared card container */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Card header */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.cardSubtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* =========================================
+   KPI CARDS GRID
+========================================= */
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.kpiCard {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kpiMetric {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 6px 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 13px;
+  align-self: flex-start;
+}
+
+/* =========================================
+   TABS — STYLE 1 (RECTANGULAR)
+========================================= */
+.tabBar {
+  background: #f1f5ff;
+  padding: 6px;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #dbe7ff;
+}
+
+.tab {
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-weight: 500;
+}
+
+.tab:hover {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.tab.active {
+  background: #ffffff;
+  color: #1e40af;
+  font-weight: 600;
+  border-color: #4169e1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   FILTERS BAR
+========================================= */
+.filtersBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.input,
+.select {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  font-size: 13px;
+  width: 100%;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* =========================================
+   TABLE STYLES
+========================================= */
+.tableWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th {
+  background: #f8fafc;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.badge {
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badgeSuccess {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badgeInfo {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+/* =========================================
+   FORM SECTIONS
+========================================= */
+.sectionLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  font-size: 13px;
+  min-height: 70px;
+}
+
+.buttonRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.formInfo {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* =========================================
+   SUMMARY COMPONENT
+========================================= */
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.summaryBlock {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.metricPill {
+  background: #eef2ff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4338ca;
+  align-self: center;
+}
+/* =========================================
+   FORM — INPUT + LABEL + GRID (FULL STYLE)
+========================================= */
+
+/* Label above each input */
+.formLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+/* Input container for each field */
+.formField {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input styles */
+.input,
+.select {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  font-size: 13px;
+  width: 100%;
+  background: #fff;
+  height: 38px; /* Fix height to match demo */
+}
+
+/* Focus */
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+
+/* Grid for form sections */
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* Textarea */
+.textarea {
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  font-size: 13px;
+  min-height: 70px;
+  background: #fff;
+}
+
+/* Section heading */
+.sectionLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+/* Buttons row */
+.buttonRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+/* Helper text */
+.formInfo {
+  font-size: 11px;
+  color: #6b7280;
+}

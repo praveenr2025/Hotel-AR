@@ -1,0 +1,177 @@
+
+
+.pageTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.pageSubtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+/* ─────────────────────────────────────────────── */
+/* TOP CARD (Tabs + Filters) */
+/* ─────────────────────────────────────────────── */
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 0 rgba(2,6,23,0.03);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  padding: 6px 16px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  cursor: pointer;
+  color: #374151;
+}
+
+.tab.active {
+  background: #e8edff;
+  border-color: #4169e1;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+/* Filters row */
+.filtersRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.searchInput {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+}
+
+/* ─────────────────────────────────────────────── */
+/* DATA TABLE */
+/* ─────────────────────────────────────────────── */
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-top: 14px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table thead tr {
+  background: #f9fafb;
+}
+
+.table th {
+  text-align: left;
+  color: #6b7280;
+  padding: 10px 12px;
+  font-size: 13px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.table tr:hover {
+  background: #f9fafb;
+}
+
+/* Status badges */
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.badgeSuccess {
+  background: #e8f9ef;
+  color: #0f7c35;
+}
+
+.badgeWarning {
+  background: #fff6e6;
+  color: #b45309;
+}
+
+/* Edit button */
+.editBtn {
+  padding: 6px 12px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.editBtn:hover {
+  background: #e5e7eb;
+}
+
+/* ─────────────────────────────────────────────── */
+/* PROPERTY DETAILS + AMENITIES */
+/* ─────────────────────────────────────────────── */
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 20px;
+}
+
+.bottomCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.bottomCardHeader {
+  margin-bottom: 12px;
+}
+
+.bottomTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.bottomSubtitle {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.bottomList {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-left: 20px;
+}

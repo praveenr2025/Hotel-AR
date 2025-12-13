@@ -1,0 +1,125 @@
+/* ---- TABS ---- */
+.tabList {
+  display: inline-flex;
+  gap: 8px;
+  background: #eef2ff;
+  padding: 6px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.tab {
+  padding: 8px 16px;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  color: #333;
+}
+
+.active {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  font-weight: 600;
+}
+
+/* ---- FILTERS ---- */
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* ---- FORM ---- */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: -6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.label {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  font-size: 13px;
+}
+
+/* ---- CHECKBOX GRID ---- */
+.checkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  font-size: 13px;
+}
+
+/* ---- ACTION BAR ---- */
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.statusNote {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* ---- TEMPLATE GRID ---- */
+.templateGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.cardHeader {
+  margin-bottom: 12px;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cardSubtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.defaults {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}

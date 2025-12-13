@@ -1,0 +1,318 @@
+/* ---- TABLE WRAPPER ---- */
+.tableWrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+}
+
+/* ---- TABLE ---- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table thead th {
+  text-align: left;
+  padding: 12px 10px;
+  background: #f8f8f8;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table tbody tr:hover {
+  background: #f6faff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* ---- CARD ---- */
+.card {
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* ---- CARD HEADER ---- */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  font-size: 0.85rem;
+  color: #6d6d6d;
+  margin-top: 2px;
+}
+
+/* ---- METRIC PILL ---- */
+.metric-pill {
+  padding: 6px 12px;
+  background: #e8ecff;
+  border-radius: 20px;
+  color: #3246d3;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ---- FORM GRID ---- */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- INPUT + SELECT ---- */
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 0.9rem;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: #4060ff;
+  box-shadow: 0 0 3px rgba(64,96,255,0.25);
+}
+
+/* ---- ACTIONS ---- */
+.actions {
+  grid-column: span 4;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .actions {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .actions {
+    grid-column: span 1;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* ---- TEXTAREA ---- */
+.textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #4060ff;
+  box-shadow: 0 0 3px rgba(64,96,255,0.25);
+}
+/* ---- PAGE SPACING ---- */
+.pageSection {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ---- POLICY LIST ---- */
+.policyList {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+/* ---- AMENITIES GRID ---- */
+.amenitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .amenitiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .amenitiesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.amenitiesGrid label {
+  font-size: 0.9rem;
+  color: #333;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+.formPage {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+
+  max-width: 1500px;   /* <— This is the key */
+  margin: 0 auto;      /* <— Centers content */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.pageIntro {
+  font-size: 0.9rem;
+  color: #6d6d6d;
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.inlineInputs {
+  display: flex;
+  gap: 10px;
+}
+
+.footerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.resetNote {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: #6d6d6d;
+}
+/* FILTER ROW */
+.filterRow {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+/* TWO CARDS SIDE BY SIDE */
+.twoCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .twoCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* STATUS BADGES */
+.badgeSuccess {
+  background: #e7f8ea;
+  color: #1e8b3f;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badgeWarning {
+  background: #fff7e5;
+  color: #b57a00;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+/* TAB WRAPPER - THE SOFT BLUE BACKGROUND BAR */
+.tabList {
+  display: inline-flex;
+  gap: 8px;
+  background: #eef3ff;
+  padding: 8px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* INDIVIDUAL TAB */
+.tab {
+  background: transparent;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2a2a2a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* ACTIVE TAB - WHITE WITH SHADOW */
+.active {
+  background: #ffffff;
+  color: #1a3ae0;
+  font-weight: 600;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.08);
+}
+
+/* CONTENT WRAPPER */
+.content {
+  margin-top: 20px;
+}

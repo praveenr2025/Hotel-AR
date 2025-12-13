@@ -1,0 +1,109 @@
+.page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.cardFull {
+  grid-column: span 12;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 0 rgba(2,6,23,0.03);
+}
+
+.cardHeader {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cardTitle {
+  font-weight:600;
+  font-size:16px;
+}
+
+.cardSubtitle {
+  font-size:12px;
+  color:var(--muted);
+}
+
+.page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.kpiGrid > div {
+  grid-column: span 3;
+}
+
+@media (max-width: 780px) {
+  .kpiGrid > div {
+    grid-column: span 12;
+  }
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.cardFull {
+  grid-column: span 12;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 0 rgba(2,6,23,0.03);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cardSubtitle {
+  font-size: 12px;
+  color: var(--muted);
+}
+@media (max-width: 780px) {
+  .kpiGrid {
+    overflow-x: auto;
+    display: flex;
+    gap: 12px;
+    padding-bottom: 8px;
+  }
+
+  .kpiGrid > div {
+    min-width: 260px;
+    flex: 0 0 auto;
+  }
+}

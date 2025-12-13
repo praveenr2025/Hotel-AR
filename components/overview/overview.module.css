@@ -1,0 +1,149 @@
+/**************************************
+ * OVERVIEW — GLOBAL LAYOUT
+ **************************************/
+
+.metricsRow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/**************************************
+ * GRID LAYOUTS (MATCH HTML)
+ **************************************/
+
+.grid2 {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);
+  gap: 16px;
+  margin-top: 12px;
+}
+
+/**************************************
+ * CARD NORMALIZATION
+ **************************************/
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+/**************************************
+ * SECTION HEADERS
+ **************************************/
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.sectionSubtitle {
+  font-size: 11px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/**************************************
+ * TABLE WRAPPER (SCROLL SAFE)
+ **************************************/
+
+.tableWrapSmall {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+/**************************************
+ * QUICK ACTIONS
+ **************************************/
+
+.quickActions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/**************************************
+ * BADGE / META TEXT
+ **************************************/
+
+.metaText {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.badgeSmall {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+/**************************************
+ * RESPONSIVE BREAKPOINTS
+ **************************************/
+
+@media (max-width: 1080px) {
+  .metricsRow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 780px) {
+  .metricsRow {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.fullWidth {
+  width: 100%;
+}
+/**************************************
+ * SPARK BAR – ROOM NIGHT TREND
+ **************************************/
+
+.sparkRow {
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+  height: 40px;
+  margin-top: 6px;
+}
+
+.sparkBar {
+  flex: 1;
+  border-radius: 4px;
+  background: linear-gradient(to top, #fb923c, #fed7aa);
+}
+
+.sparkBarToday {
+  background: linear-gradient(to top, #60a5fa, #bfdbfe);
+}
+
+.sparkLegend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: 4px;
+}
